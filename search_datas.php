@@ -99,7 +99,7 @@ function search_datas_search($query, $course, $blockconfig, $offset, &$countentr
 
     foreach ($searchterms as $searchterm) {
 
-        $searchterm = textlib::strtolower($searchterm);
+        $searchterm = core_text::strtolower($searchterm);
 
         if ($contentsearch) {
             $contentsearch .= " AND ";
